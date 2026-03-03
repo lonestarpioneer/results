@@ -1,41 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lone Star Pioneer | Live Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lone Star Pioneer | Live Election Results</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background-color: #ffffff;
+      color: #111;
+    }
+
+    .header {
+      background-color: #CC4122;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .masthead {
+      color: #ffffff;
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin: 0;
+    }
+
+    .subhead {
+      color: #ffffff;
+      margin-top: 10px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #CC4122;
+      padding-bottom: 10px;
+    }
+
+    #results-widget {
+      margin-top: 30px;
+    }
+
+    .footer {
+      margin-top: 80px;
+      padding: 30px 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+
+    a {
+      color: #CC4122;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>Lone Star Pioneer Live Election Results</h1>
+  <div class="header">
+    <h1 class="masthead">Lone Star Pioneer</h1>
+    <div class="subhead">Live Election Results Center</div>
+  </div>
 
-<div id="results-widget">
-  <!-- Paste your Civic API embed code below this line -->
-  <iframe
-  id="civicapi-embed2-44288"
-  src="https://civicapi.org/embed2/?p=eyJyYWNlSWQiOjQ0Mjg4LCJ0aGVtZSI6ImNvbXBhY3QtY2l2aWNhcGkiLCJtYXhDYW5kaWRhdGVzIjo4LCJzaG93SGVhZGVyIjp0cnVlLCJzaG93TWV0YSI6dHJ1ZSwic2hvd1Byb2dyZXNzIjp0cnVlfQ%3D%3D&fid=civicapi-embed2-44288"
-  style="width:100%;border:0;"
-  loading="lazy"
-  scrolling="no"
-></iframe>
-<script>
-(function(){
-  const iframe = document.getElementById('civicapi-embed2-44288');
-  if (!iframe) return;
+  <div class="container">
+    <h2 class="section-title">Live Results</h2>
 
-  function onMessage(event) {
-    const data = event.data;
-    if (!data || data.source !== 'civicapi-embed2' || data.type !== 'resize') return;
-    if (data.frameId !== 'civicapi-embed2-44288') return;
-    if (typeof data.height !== 'number') return;
+    <div id="results-widget">
+      <!-- PASTE YOUR CIVIC API EMBED CODE BELOW THIS LINE -->
 
-    iframe.style.height = Math.max(220, Math.ceil(data.height)) + 'px';
-  }
 
-  window.addEventListener('message', onMessage);
-})();
-</script>
+      <!-- END CIVIC API EMBED -->
 
-</div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 Lone Star Pioneer • Independent Texas Political Coverage<br>
+    <a href="https://lonestarpioneer.com">Return to Main Site</a>
+  </div>
 
 </body>
 </html>
