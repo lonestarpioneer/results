@@ -85,7 +85,57 @@
 
     <div id="results-widget">
       <!-- PASTE YOUR CIVIC API EMBED CODE BELOW THIS LINE -->
+<iframe
+  id="civicapi-embed2-44286"
+  src="https://civicapi.org/embed2/?p=eyJyYWNlSWQiOjQ0Mjg2LCJ0aGVtZSI6ImNvbXBhY3QtY2l2aWNhcGkiLCJtYXhDYW5kaWRhdGVzIjo4LCJzaG93SGVhZGVyIjp0cnVlLCJzaG93TWV0YSI6dHJ1ZSwic2hvd1Byb2dyZXNzIjp0cnVlfQ%3D%3D&fid=civicapi-embed2-44286"
+  style="width:100%;border:0;"
+  loading="lazy"
+  scrolling="no"
+></iframe>
+<script>
+(function(){
+  const iframe = document.getElementById('civicapi-embed2-44286');
+  if (!iframe) return;
 
+  function onMessage(event) {
+    const data = event.data;
+    if (!data || data.source !== 'civicapi-embed2' || data.type !== 'resize') return;
+    if (data.frameId !== 'civicapi-embed2-44286') return;
+    if (typeof data.height !== 'number') return;
+
+    iframe.style.height = Math.max(220, Math.ceil(data.height)) + 'px';
+  }
+
+  window.addEventListener('message', onMessage);
+})();
+</script>
+
+      <iframe
+  id="civicapi-embed2-44285"
+  src="https://civicapi.org/embed2/?p=eyJyYWNlSWQiOjQ0Mjg1LCJ0aGVtZSI6ImNvbXBhY3QtY2l2aWNhcGkiLCJtYXhDYW5kaWRhdGVzIjo4LCJzaG93SGVhZGVyIjp0cnVlLCJzaG93TWV0YSI6dHJ1ZSwic2hvd1Byb2dyZXNzIjp0cnVlfQ%3D%3D&fid=civicapi-embed2-44285"
+  style="width:100%;border:0;"
+  loading="lazy"
+  scrolling="no"
+></iframe>
+<script>
+(function(){
+  const iframe = document.getElementById('civicapi-embed2-44285');
+  if (!iframe) return;
+
+  function onMessage(event) {
+    const data = event.data;
+    if (!data || data.source !== 'civicapi-embed2' || data.type !== 'resize') return;
+    if (data.frameId !== 'civicapi-embed2-44285') return;
+    if (typeof data.height !== 'number') return;
+
+    iframe.style.height = Math.max(220, Math.ceil(data.height)) + 'px';
+  }
+
+  window.addEventListener('message', onMessage);
+})();
+</script>
+
+      
 
       <!-- END CIVIC API EMBED -->
 
