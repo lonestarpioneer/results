@@ -48,7 +48,14 @@
     background-color: #CC4122;
     border-radius: 50%;
     display: inline-block;
+    animation: liveBlink 2.4s ease-in-out infinite;
     }
+
+    @keyframes liveBlink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.25; }
+  100% { opacity: 1; }
+}
     
     .updated-time {
       color: #666;
