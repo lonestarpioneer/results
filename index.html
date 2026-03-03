@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lone Star Pioneer | Live Results</title>
+</head>
+<body>
+
+<h1>Lone Star Pioneer Live Election Results</h1>
+
+<div id="results-widget">
+  <!-- Paste your Civic API embed code below this line -->
+  <iframe
+  id="civicapi-embed2-44288"
+  src="https://civicapi.org/embed2/?p=eyJyYWNlSWQiOjQ0Mjg4LCJ0aGVtZSI6ImNvbXBhY3QtY2l2aWNhcGkiLCJtYXhDYW5kaWRhdGVzIjo4LCJzaG93SGVhZGVyIjp0cnVlLCJzaG93TWV0YSI6dHJ1ZSwic2hvd1Byb2dyZXNzIjp0cnVlfQ%3D%3D&fid=civicapi-embed2-44288"
+  style="width:100%;border:0;"
+  loading="lazy"
+  scrolling="no"
+></iframe>
+<script>
+(function(){
+  const iframe = document.getElementById('civicapi-embed2-44288');
+  if (!iframe) return;
+
+  function onMessage(event) {
+    const data = event.data;
+    if (!data || data.source !== 'civicapi-embed2' || data.type !== 'resize') return;
+    if (data.frameId !== 'civicapi-embed2-44288') return;
+    if (typeof data.height !== 'number') return;
+
+    iframe.style.height = Math.max(220, Math.ceil(data.height)) + 'px';
+  }
+
+  window.addEventListener('message', onMessage);
+})();
+</script>
+
+</div>
+
+</body>
+</html>
